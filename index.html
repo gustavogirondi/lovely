@@ -3,36 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site para Minha Namorada</title>
+    <title>Site para Brubru</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fceff8; /* Fundo rosa claro */
+            font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            position: relative; /* Adiciona position:relative para posicionamento absoluto dos elementos filhos */
+        }
+        
+        /* Estilos para o cabeçalho */
+        header {
+            background-color: #ff8c8c;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Estilos para o conteúdo */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* Estilos para o carrossel */
+        #carousel {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+            grid-gap: 20px;
+            justify-items: center; /* Alinha as fotos ao centro */
+            margin-top: 20px;
+        }
+
+        #carousel img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #ff8c8c;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Estilos para o gif na lateral direita inferior */
+        .gif-container {
+            position: absolute;
+            bottom: 20px;
+            left: 20px; /* Posiciona na lateral direita */
+            z-index: 999;
+            text-align: center;
+        }
+
+        .gif-container img {
+            width: 270px;
+            height: auto;
+            cursor: pointer; /* Adiciona cursor de ponteiro ao passar por cima */
+        }
+
+        .click-text {
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
     <div class="container">
-        <h1>Álbuns de Lembranças</h1>
-        <p>Um lugar especial para as nossas memórias juntos</p>
+        <h1>Momentos nossos que me marcaram.</h1>
+        <p>Você é o amor da minha vida.</p>
     </div>
 </header>
 
 <div class="container">
-    <h2>Nossas Fotos</h2>
+    <h2>Três fotos nossas que eu adoro:</h2>
+    <!-- Grade para as fotos -->
     <div id="carousel">
-        <!-- Aqui serão inseridas as fotos do carrossel -->
+        <img src="foto1.jpg" alt="Foto 1">
+        <img src="foto2.jpg" alt="Foto 3">
+        <img src="foto3.jpg" alt="Foto 4">
     </div>
 </div>
 
+<footer>
+    <p></p>
+</footer>
+
+<div class="gif-container">
+    <p class="click-text">Clique no coração</p>
+
+    <a href="index2.html"><img src="https://i.pinimg.com/originals/94/2c/32/942c32139b2f81417c8d9f0176bad849.gif" alt="GIF"></a>
+</div>
+
 <audio id="myAudio" autoplay loop>
-  <source src="sua_musica.mp3" type="audio/mp3">
+  <source src="luan.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 
-<div class="heart-container">
-    <div class="heart"></div>
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>

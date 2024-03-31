@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index 2</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            background-color: #f095d5; /* Fundo rosa claro */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Quer casar comigo?</h1>
+        <div class='buttons'>
+            <!-- Adicionando um identificador "sim-button" para o botão "Sim" -->
+            <button id="sim-button">Sim</button>
+            <button>Não</button>
+        </div>
+    </div>
+
+    <script>
+        // Obtém o botão "Sim" pelo seu identificador
+        const simButton = document.getElementById('sim-button');
+
+        // Adiciona um evento de clique ao botão "Sim"
+        simButton.addEventListener('click', function() {
+            // Redireciona o usuário para a página index3.html
+            window.location.href = 'index3.html';
+        });
+    </script>
+</body>
+</html>

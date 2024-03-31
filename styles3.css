@@ -1,0 +1,26 @@
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.romantic-text {
+    padding: 20px;
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #333;
+    transition: box-shadow 0.3s ease; /* Adicionamos a transição para a sombra */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+}
+
+.romantic-text:hover {
+    box-shadow: 0 0 15px rgba(240, 149, 213, 0.4); /* Sombra rosa claro aumentada no hover */
+}
+
+.author {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
